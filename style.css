@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99e2d0;
+}
+body {
+  display: grid;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+}
+.menu_img {
+  height: 100px;
+  width: 100px;
+}
+
+.location-icon {
+  width: 10px;
+  height: 10px;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+li {
+  hover {
+    color: var(--tertiary-color);
+  }
+}

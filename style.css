@@ -5,21 +5,24 @@
 }
 body {
   display: grid;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-.icon {
-  display: flex;
+header {
+  display: grid;
   justify-content: center;
-  color: var(--primary-color);
-}
-.menu_img {
-  height: 100px;
-  width: 100px;
-}
+  padding: 15px;
 
-.location-icon {
-  width: 10px;
-  height: 10px;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+nav {
+  background-color: lightgray;
+  box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+  gap: 10px;
 }
 .location {
   display: flex;
@@ -27,7 +30,52 @@ body {
   gap: 10px;
   justify-content: center;
 }
+.location-icon {
+  width: 12px;
+  height: 16px;
+  fill: #000;
+}
 
+.location p {
+  font-size: 16px;
+  color: rgb(37, 37, 37);
+}
+
+.menu-booking {
+  text-align: center;
+}
+.menu-booking button {
+  border-radius: 50px;
+  height: 50px;
+  color: white;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu_img {
+  height: 100px;
+  width: 100px;
+}
+
+.resturaunts img {
+  height: 50px;
+  width: 50px;
+}
+.button-list {
+  list-style-type: none;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+  }
+  button {
+    display: flex;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+  }
+}
 li {
   hover {
     color: var(--tertiary-color);

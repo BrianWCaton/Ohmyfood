@@ -76,6 +76,9 @@ nav {
   height: 100px;
   width: 100px;
 }
+.resturaunts {
+  padding: 20px;
+}
 .resturaunt-card-container {
   display: grid;
   grid-template-columns: 1fr;

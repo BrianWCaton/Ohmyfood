@@ -50,9 +50,17 @@ nav {
   font-size: 16px;
   color: rgb(37, 37, 37);
 }
-
+.how-it-works {
+  padding: 50px 0;
+}
+.container {
+  margin: 0 auto;
+  width: 85.3%;
+}
 .menu-booking {
   text-align: center;
+  background-color: #f6f6f6;
+  padding: 50px 0;
 }
 .menu-booking button {
   border-radius: 50px;
@@ -68,18 +76,47 @@ nav {
   height: 100px;
   width: 100px;
 }
-.resturaunts a {
+.resturaunt-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-color: #f6f6f6;
 }
 .resturaunt-card {
   box-shadow: 0px 4px 8px 3px rgba(175, 92, 255, 0.5);
+  border-radius: 15px;
+  display: block;
+}
+.resturaunt-image {
+  position: relative;
+}
+.badge {
+  color: #008766;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 7px 14px;
+}
+.resturaunt-card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 230px;
+}
+.card-content {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* this is default */
+}
+.card-content h4,
+.card-content p {
+  margin: 0;
 }
 
-.resturaunts img {
-  border-radius: 20% 20% 0 0;
-  width: auto;
-  object-fit: cover;
-  height: 100px;
-}
 .button-list {
   list-style-type: none;
   padding: 0;
@@ -95,7 +132,17 @@ nav {
   }
 }
 li {
-  hover {
+  &:hover {
     color: var(--tertiary-color);
   }
+}
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 50px 0;
+}
+.footer-logo {
+  filter: invert(100%);
+  width: 110px;
+  height: auto;
 }

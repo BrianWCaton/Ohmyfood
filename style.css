@@ -115,6 +115,10 @@ nav {
   flex-direction: row;
   /* this is default */
 }
+.heart {
+  color: #353535;
+  font-size: 35px;
+}
 .card-content h4,
 .card-content p {
   margin: 0;
@@ -143,6 +147,9 @@ footer {
   background-color: #353535;
   color: white;
   padding: 50px 0;
+  ul {
+    list-style-type: none;
+  }
 }
 .footer-logo {
   filter: invert(100%);

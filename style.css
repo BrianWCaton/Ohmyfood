@@ -85,6 +85,12 @@ nav {
   gap: 20px;
   background-color: #f6f6f6;
 }
+@media (width>=600px) {
+  .resturaunt-card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
 .resturaunt-card {
   box-shadow: 0px 4px 8px 3px rgba(175, 92, 255, 0.5);
   border-radius: 15px;
@@ -127,17 +133,50 @@ nav {
 .button-list {
   list-style-type: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
   li {
     margin-bottom: 10px;
   }
   button {
     display: flex;
+    padding: 20px;
+    position: relative;
     width: 100%;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 4px 8px 3px rgba(175, 92, 255, 0.5);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    background-color: #f6f6f6;
+    align-items: center;
+  }
+  .icon {
+    width: 20%;
+  }
+  span.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    background-color: var(--primary-color);
+    padding: 3px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    transform: translateY(-50%);
   }
 }
+@media (width>=600px) {
+  .button-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+
 li {
   &:hover {
     color: var(--tertiary-color);

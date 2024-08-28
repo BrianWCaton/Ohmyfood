@@ -78,12 +78,12 @@ nav {
 }
 .resturaunts {
   padding: 20px;
+  background-color: #f6f6f6;
 }
 .resturaunt-card-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  background-color: #f6f6f6;
 }
 @media (width>=600px) {
   .resturaunt-card-container {
@@ -92,7 +92,7 @@ nav {
   }
 }
 .resturaunt-card {
-  box-shadow: 0px 4px 8px 3px rgba(175, 92, 255, 0.5);
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   display: block;
 }
@@ -153,6 +153,11 @@ nav {
   .icon {
     width: 20%;
   }
+  .icon svg {
+    height: 20px;
+    width: 100%;
+  }
+
   span.number {
     display: flex;
     justify-content: center;
@@ -180,6 +185,9 @@ nav {
 li {
   &:hover {
     color: var(--tertiary-color);
+    .footer-icon svg path {
+      fill: var(--tertiary-color);
+    }
   }
 }
 footer {
@@ -188,10 +196,21 @@ footer {
   padding: 50px 0;
   ul {
     list-style-type: none;
+    padding: 0;
   }
 }
 .footer-logo {
   filter: invert(100%);
   width: 110px;
   height: auto;
+}
+.footer-icon {
+  padding-right: 5px;
+}
+.footer-icon svg {
+  height: 100%;
+  width: 12px;
+  path {
+    fill: white;
+  }
 }

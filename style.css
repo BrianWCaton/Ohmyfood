@@ -37,7 +37,7 @@ header {
     transform: translateY(-50%);
   }
 }
-nav {
+.header-nav {
   background-color: #eaeaea;
   box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
   gap: 10px;
@@ -157,6 +157,11 @@ nav {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     background-color: #f6f6f6;
     align-items: center;
+    transition: background-color .2s ease-in-out;
+    &:hover{
+      background-color: var(--secondary-color);
+      cursor: help;
+    }
   }
   .icon {
     width: 20%;
@@ -203,9 +208,25 @@ footer {
   color: white;
   padding: 50px 0;
   ul {
+
     list-style-type: none;
     padding: 0;
   }
+}
+@media (width>=600px){
+  footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+footer nav{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+}
 }
 .footer-logo {
   filter: invert(100%);

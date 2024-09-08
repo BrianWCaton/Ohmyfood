@@ -353,6 +353,10 @@ footer nav{
   border: none;
   padding-left: 20px;
   padding-right: 20px;
+  transition: opacity .3s ease-in-out;
+  &:hover{
+    filter: brightness(120%)
+  }
 }
 .title{
   font-weight: 1000;

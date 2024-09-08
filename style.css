@@ -271,12 +271,8 @@ footer nav{
   text-align: center;
   font-family: "Shrikhand", serif;
 }
-.meal-group {
-  max-width: 100%;
-}
-.food-container {
-  max-width: 100%;
-}
+
+
 .meal-group {
   margin-bottom: 40px;
 }

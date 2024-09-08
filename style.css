@@ -174,7 +174,7 @@ header {
   span.number {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     position: absolute;
     left: -12px;
     top: 50%;
@@ -329,4 +329,13 @@ text-align: left;
     transform: rotate(360deg);
     transform-origin: center;
   }
+}
+.order{
+  border-radius: 50px;
+  height: 50px;
+  color: white;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }

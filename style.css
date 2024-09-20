@@ -219,21 +219,27 @@ footer {
     padding: 0;
   }
 }
+footer ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+}
 @media (width>=600px){
   footer ul{
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 20px;
     align-items: center;
+  }
+  footer nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  
+  } 
 }
-footer nav{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 20px;
-}
-}
+
 .footer-logo {
   filter: invert(100%);
   width: 110px;

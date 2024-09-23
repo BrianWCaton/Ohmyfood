@@ -136,6 +136,9 @@ header {
 .heart {
   color: #353535;
   font-size: 35px;
+  &:hover{
+    color: #9356dc;
+  }
   
 }
 
@@ -176,7 +179,11 @@ header {
     height: 20px;
     width: 100%;
   }
-
+.icon svg path{
+  &:hover{
+    fill: pink;
+  }
+}
   span.number {
     display: flex;
     justify-content: center;

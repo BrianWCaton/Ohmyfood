@@ -348,8 +348,31 @@ footer ul{
   height: 100%;
   justify-content: center;
 }
+.loading-screen {
+  backdrop-filter: blur(30px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2; 
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .loader{
-  font-size: 100px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0.4));
+  fill: #fff;
+  width: 100px;
+  height: 100px;
+  animation-name: spin;
   animation: spin 2s linear infinite;
   
   display: inline-block;
@@ -358,9 +381,28 @@ footer ul{
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 10;
-  display: none;
+ 
   /* place holder for now */
 }
+@keyframes fadeOut {
+  
+  0% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 @keyframes spin{
   from{
     transform: rotate(0);

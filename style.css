@@ -141,6 +141,54 @@ header {
   }
   
 }
+.heart-icon {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 30;
+  cursor: pointer;
+  position: relative;
+
+   svg {
+    overflow: visible;
+    width: 20px;
+  }
+
+  path {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+  }
+
+
+
+  .heart-main:hover path {
+    animation: heart-animation 1s ease-in-out forwards;
+  }
+
+}
+
+@keyframes heart-animation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 1550;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+  
+  }
+ 
+  90% {
+    
+    fill: #9356dc;
+  }
+  100% {
+    stroke-dashoffset: 3100;
+    fill: #9356dc;
+  }
+}
 
 .card-content h4,
 .card-content p {
@@ -167,6 +215,7 @@ header {
     background-color: #f6f6f6;
     align-items: center;
     transition: background-color .2s ease-in-out;
+    
     &:hover{
       background: linear-gradient(to top, #9356dc, #ff79da);
       cursor: grabbing;

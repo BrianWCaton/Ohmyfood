@@ -411,9 +411,9 @@ footer ul{
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2; 
+  z-index: 10; 
   animation-name: fadeOut;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -428,15 +428,9 @@ footer ul{
   fill: #fff;
   width: 100px;
   height: 100px;
-  animation-name: spin;
   animation: spin 2s linear infinite;
   
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 10;
+
  
   /* place holder for now */
 }

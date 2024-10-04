@@ -377,6 +377,9 @@ footer ul {
         display: block;
       }
     }
+    input[type="checkbox"]:after {
+      animation: check-spin 2s linear infinite;
+    }
   }
 
   &:has(:checked) {
@@ -386,12 +389,14 @@ footer ul {
       position: relative;
       &:after {
         position: absolute;
+        background-color: salmon;
         top: 50%;
         left: 50%;
         content: "\2713";
         font-size: 20px;
         transform: translate(-50%, -50%);
         color: var(--tertiary-color);
+        transform-origin: center;
       }
     }
   }
@@ -441,8 +446,6 @@ footer ul {
   width: 100px;
   height: 100px;
   animation: spin 2s linear infinite;
-
-  /* place holder for now */
 }
 @keyframes fadeOut {
   0% {
@@ -469,6 +472,17 @@ footer ul {
   }
   to {
     transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+@keyframes check-spin {
+  from {
+    transform: rotate(0) translate(-50%, -50%);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(-360deg) translate(-50%, -50%);
     transform-origin: center;
   }
 }

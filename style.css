@@ -366,7 +366,7 @@ footer ul {
   border-width: 0;
   transition: 200ms ease-in-out;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
-  padding: 0;
+  padding: 15px;
 
   &:hover {
     cursor: pointer;

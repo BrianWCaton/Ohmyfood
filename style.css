@@ -410,6 +410,9 @@ footer ul {
 }
 .title-description {
   padding: 15px;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .checkbox-container {
   background-color: #99e2d0;

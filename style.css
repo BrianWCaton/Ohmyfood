@@ -251,6 +251,7 @@ header {
 }
 
 footer li {
+  cursor: pointer;
   &:hover {
     color: var(--tertiary-color);
     .footer-icon svg path {

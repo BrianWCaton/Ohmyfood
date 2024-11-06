@@ -1,24 +1,23 @@
+/*$ npx sass --watch style.scss:style.css*/
+
 html {
   scroll-behavior: smooth;
 }
-
 :root {
   --primary-color: #9356dc;
   --secondary-color: #ff79da;
   --tertiary-color: #99e2d0;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   position: relative;
+  
 }
-
 a {
   color: black;
   text-decoration: none;
 }
-
 a:visited {
   color: black;
 }
@@ -27,7 +26,6 @@ header {
   padding: 15px;
   position: relative;
 }
-
 header img {
   width: 200px;
   height: auto;
@@ -48,14 +46,12 @@ header svg.icon {
   box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
   gap: 10px;
 }
-
 .location {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
 }
-
 .location-icon {
   width: 12px;
   height: 16px;
@@ -66,22 +62,18 @@ header svg.icon {
   font-size: 16px;
   color: rgb(37, 37, 37);
 }
-
 .how-it-works {
   padding: 50px 0;
 }
-
 .container {
   margin: 0 auto;
   width: 85.3%;
 }
-
 .menu-booking {
   text-align: center;
   background-color: #f6f6f6;
   padding: 50px 0;
 }
-
 .menu-booking button {
   border-radius: 50px;
   height: 50px;
@@ -91,7 +83,6 @@ header svg.icon {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .menu-booking button:hover {
   filter: brightness(120%);
 }
@@ -100,19 +91,16 @@ header svg.icon {
   height: 100px;
   width: 100px;
 }
-
 .resturaunts {
   padding: 20px;
   background-color: #f6f6f6;
 }
-
 .resturaunt-card-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
-@media (width >= 600px) {
+@media (width>=600px) {
   .resturaunt-card-container {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -123,11 +111,9 @@ header svg.icon {
   border-radius: 15px;
   display: block;
 }
-
 .resturaunt-image {
   position: relative;
 }
-
 .badge {
   color: #008766;
   background-color: #99e2d0;
@@ -136,14 +122,12 @@ header svg.icon {
   right: 10px;
   padding: 7px 14px;
 }
-
 .resturaunt-card img {
   border-radius: 15px 15px 0 0;
   width: 100%;
   object-fit: cover;
   height: 230px;
 }
-
 .card-content {
   padding: 15px;
   display: flex;
@@ -152,12 +136,10 @@ header svg.icon {
   flex-direction: row;
   /* this is default */
 }
-
 .heart {
   color: #353535;
   font-size: 35px;
 }
-
 .heart:hover {
   color: #9356dc;
 }
@@ -168,18 +150,21 @@ header svg.icon {
   stroke-width: 30;
   cursor: pointer;
   position: relative;
-}
-.heart-icon svg {
-  overflow: visible;
-  width: 20px;
-}
-.heart-icon path {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 1550;
-  transform-origin: center;
-}
-.heart-icon .heart-main:hover path {
-  animation: heart-animation 1s ease-in-out forwards;
+
+  svg {
+    overflow: visible;
+    width: 20px;
+  }
+
+  path {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+  }
+
+  .heart-main:hover path {
+    animation: heart-animation 1s ease-in-out forwards;
+  }
 }
 
 @keyframes heart-animation {
@@ -193,6 +178,7 @@ header svg.icon {
     stroke-dashoffset: 3100;
     fill: transparent;
   }
+
   90% {
     fill: #9356dc;
   }
@@ -201,6 +187,7 @@ header svg.icon {
     fill: #9356dc;
   }
 }
+
 .card-content h4,
 .card-content p {
   margin: 0;
@@ -212,86 +199,86 @@ header svg.icon {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
-}
-.button-list li {
-  margin-bottom: 10px;
-}
-.button-list button {
-  display: flex;
-  padding: 20px;
-  position: relative;
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  background-color: #f6f6f6;
-  align-items: center;
-  transition: background-color 0.2s ease-in-out;
-}
-.button-list button:hover {
-  background: linear-gradient(to top, #9356dc, #ff79da);
-  cursor: grabbing;
-}
-.button-list .icon {
-  width: 20%;
-}
-.button-list .icon svg {
-  height: 20px;
-  width: 100%;
-}
-.button-list .icon svg path:hover {
-  fill: pink;
-}
-.button-list span.number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -12px;
-  top: 50%;
-  background-color: var(--primary-color);
-  padding: 3px;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  color: #fff;
-  transform: translateY(-50%);
-}
+  li {
+    margin-bottom: 10px;
+  }
+  button {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    background-color: #f6f6f6;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
 
-@media (width >= 600px) {
+    &:hover {
+      background: linear-gradient(to top, #9356dc, #ff79da);
+      cursor: grabbing;
+    }
+  }
+  .icon {
+    width: 20%;
+  }
+  .icon svg {
+    height: 20px;
+    width: 100%;
+  }
+  .icon svg path {
+    &:hover {
+      fill: pink;
+    }
+  }
+  span.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    background-color: var(--primary-color);
+    padding: 3px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+}
+@media (width>=600px) {
   .button-list {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
   }
 }
+
 footer li {
   cursor: pointer;
+  &:hover {
+    color: var(--tertiary-color);
+    .footer-icon svg path {
+      fill: var(--tertiary-color);
+    }
+  }
 }
-footer li:hover {
-  color: var(--tertiary-color);
-}
-footer li:hover .footer-icon svg path {
-  fill: var(--tertiary-color);
-}
-
 footer {
   background-color: #353535;
   color: white;
   padding: 50px 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 }
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 footer ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-@media (width >= 600px) {
+@media (width>=600px) {
   footer ul {
     flex-direction: row;
     justify-content: flex-end;
@@ -304,31 +291,28 @@ footer ul {
     gap: 20px;
   }
 }
+
 .footer-logo {
   filter: invert(100%);
   width: 110px;
   height: auto;
 }
-
 .footer-icon {
   padding-right: 5px;
 }
-
 .footer-icon svg {
   height: 100%;
   width: 12px;
+  path {
+    fill: white;
+  }
 }
-.footer-icon svg path {
-  fill: white;
-}
-
 /* Menu styles */
 .location img {
   width: 100%;
   height: 275px;
   object-fit: cover;
 }
-
 .menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
@@ -339,12 +323,10 @@ footer ul {
   position: relative;
   width: 100%;
 }
-
 .container {
   margin: 0 auto;
   width: 90vw;
 }
-
 .resturaunt-name {
   font-size: 28px;
   margin: 0;
@@ -355,35 +337,31 @@ footer ul {
 .meal-group {
   margin-bottom: 40px;
 }
-
 .course-title {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
+  &:after {
+    background-color: #99e2d0;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 40px;
+  }
 }
-.course-title:after {
-  background-color: #99e2d0;
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  height: 3px;
-  width: 40px;
-}
-
 .menu-items {
   padding: 0;
   margin-top: 12px;
 }
-
 .menu-list {
   padding: 0;
   list-style: none;
   display: grid;
   gap: 10px;
 }
-
 .menu_item {
   display: grid;
   grid-template-columns: 5fr 1fr 0fr;
@@ -395,13 +373,14 @@ footer ul {
   transition: 200ms ease-in-out;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
   padding: 0px;
-}
-.menu_item:hover {
-  cursor: pointer;
-  grid-template-columns: 5fr 1fr 1fr;
-}
-.menu_item:hover svg {
-  animation: spin-pulse 0.5s forwards linear;
+
+  &:hover {
+    cursor: pointer;
+    grid-template-columns: 5fr 1fr 1fr;
+    svg {
+      animation: spin-pulse 0.5s forwards linear;
+    }
+  }
 }
 
 @keyframes fadeInUp {
@@ -414,7 +393,9 @@ footer ul {
     transform: translateY(0);
   }
 }
+
 /* Target our individual items with nth-child and progressively make the animation delay a bit longer */
+
 .menu-list li {
   animation: fadeInUp 0.4s ease-in-out forwards;
   opacity: 0; /* Set initial opacity to 0 */
@@ -445,7 +426,6 @@ footer ul {
   width: 20px;
   height: 20px;
 }
-
 .title-description {
   padding: 15px;
   display: flex;
@@ -455,9 +435,9 @@ footer ul {
 
 .description {
   margin-bottom: 0;
+  
 }
-
-.menu_item:hover .description {
+.menu_item:hover .description{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -471,14 +451,12 @@ footer ul {
   justify-content: center;
   align-items: center;
 }
-
 .checkbox {
   align-items: center;
   display: flex;
   height: 100%;
   justify-content: center;
 }
-
 .loading-screen {
   backdrop-filter: blur(30px);
   position: absolute;
@@ -492,27 +470,28 @@ footer ul {
   animation-direction: normal;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
 .loader {
-  filter: drop-shadow(0 0 10px rgb(0, 0, 0.4));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0.4));
   fill: #fff;
   width: 100px;
   height: 100px;
   animation: spin 2s linear infinite;
 }
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
   }
+
   70% {
     opacity: 1;
   }
+
   99% {
     opacity: 0;
   }
@@ -529,6 +508,7 @@ footer ul {
     transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -539,6 +519,7 @@ footer ul {
     transform-origin: center;
   }
 }
+
 @keyframes check-spin {
   from {
     transform: rotate(0) translate(-50%, -50%);
@@ -553,7 +534,6 @@ footer ul {
   display: grid;
   justify-content: center;
 }
-
 .order {
   border-radius: 50px;
   height: 50px;
@@ -564,15 +544,13 @@ footer ul {
   padding-left: 20px;
   padding-right: 20px;
   transition: opacity 0.3s ease-in-out;
+  &:hover {
+    filter: brightness(120%);
+  }
 }
-.order:hover {
-  filter: brightness(120%);
-}
-
 .title {
   font-weight: bold;
 }
-
 .price {
   font-weight: bold;
   align-self: self-end;
@@ -580,5 +558,3 @@ footer ul {
   padding-right: 15px;
   padding: 25px;
 }
-
-/*# sourceMappingURL=style.css.map */

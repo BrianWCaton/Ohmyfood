@@ -271,13 +271,17 @@ header svg.icon {
     gap: 40px;
   }
 }
-footer li {
+footer li,
+footer a {
+  color: #fff;
   cursor: pointer;
 }
-footer li:hover {
+footer li:hover,
+footer a:hover {
   color: var(--tertiary-color);
 }
-footer li:hover .footer-icon svg path {
+footer li:hover .footer-icon svg path,
+footer a:hover .footer-icon svg path {
   fill: var(--tertiary-color);
 }
 

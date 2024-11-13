@@ -259,7 +259,9 @@ header svg.icon {
   }
 }
 
-footer li {
+footer li,
+footer a {
+  color: #fff;
   cursor: pointer;
   &:hover {
     color: var(--tertiary-color);

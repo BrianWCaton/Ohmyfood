@@ -431,6 +431,9 @@ footer ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .description {

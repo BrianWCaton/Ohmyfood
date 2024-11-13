@@ -1,3 +1,4 @@
+/*$ npx sass --watch style.scss:style.css*/
 html {
   scroll-behavior: smooth;
 }
@@ -451,6 +452,9 @@ footer ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .description {

@@ -12,7 +12,6 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   position: relative;
-  
 }
 a {
   color: black;
@@ -114,6 +113,7 @@ header svg.icon {
 .resturaunt-image {
   position: relative;
 }
+
 .badge {
   color: #008766;
   background-color: #99e2d0;
@@ -438,9 +438,11 @@ footer ul {
 
 .description {
   margin-bottom: 0;
-  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu_item:hover .description{
+.menu_item:hover .description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

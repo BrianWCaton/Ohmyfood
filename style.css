@@ -459,6 +459,9 @@ footer ul {
 
 .description {
   margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu_item:hover .description {
